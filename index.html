@@ -82,7 +82,7 @@
         <section class="w-full px-6 py-12 w-full relative">
             <div class="mx-auto bg-white w-full max-w-[26rem] px-4 pt-24 pb-24 rounded-2xl" data-aos="zoom-in" data-aos-duration="3000">
                 <h2 class="font-latin text-4xl mb-4">Birthday Party</h2>
-                <p class="text-xl font-bold">Selasa, 8 Oktober 2024</p>
+                <p class="text-xl font-bold">Rabu, 1 January 2025</p>
                 <p class="text-xl font-bold mb-8">Pukul 08.00 - 10.00 WITA</p>
                 
                 <div id="hitungMundur" class="grid grid-cols-4 gap-2 mb-8" data-aos="fade-up" data-aos-duration="3000">
@@ -154,7 +154,7 @@
     })
 
     <!-- Display the countdown timer in an element -->
-var countDownDate = new Date("Okt 8, 2024 08:00:00").getTime();
+var countDownDate = new Date("Jan 1, 2025 08:00:00").getTime();
 
 var x = setInterval(function() {
 
@@ -171,15 +171,14 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("hari").innerHTML = days + "Hari"
-  document.getElementById("jam").innerHTML = hours + "Jam"
-  document.getElementById("menit").innerHTML = minutes + "Menit"
-  document.getElementById("detik").innerHTML = seconds + "Detik"
+  document.getElementById("hari").innerHTML = days
+  document.getElementById("jam").innerHTML = hours
+  document.getElementById("menit").innerHTML = minutes
+  document.getElementById("detik").innerHTML = seconds
 
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
 </script>
